@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultation Request</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            width: 40%;
+            margin: auto;
+            padding: 25px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+        }
+
+        h2 {
+            color: #ffcc00;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form input, form button {
+            width: 80%;
+            margin: 10px 0;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            background: #ffcc00;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        form button:hover {
+            background: #e6b800;
+        }
+        footer {
+            background: rgba(85, 228, 147, 0.8);
+            color: white;
+            padding: 12px;
+            margin-top: 250px;
+            font-size: 20px;
+        }
+
+        #successMessage {
+            color: lightgreen;
+            font-size: 18px;
+            display: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add this right after the form-video-container section -->
+<section id="services" class="services-section">
+    <h2>Our Agricultural Services</h2>
+    <p class="services-intro">Comprehensive solutions to modernize and optimize your farming operations</p>
+    
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">🌱</div>
+            <h3>Crop Advisory</h3>
+            <p>Personalized crop recommendations based on soil type, climate, and market demand with optimal planting schedules.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">💧</div>
+            <h3>Irrigation Planning</h3>
+            <p>Smart water management systems and customized irrigation plans to conserve water and reduce costs.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">🔬</div>
+            <h3>Soil Testing</h3>
+            <p>Professional soil analysis with detailed nutrient reports and amendment recommendations.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">🛒</div>
+            <h3>Market Linkages</h3>
+            <p>Direct connections to buyers, processors, and exporters with real-time price information.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">🤖</div>
+            <h3>Tech Solutions</h3>
+            <p>Farm automation, IoT sensors, and drone technology for precision agriculture.</p>
+        </div>
+        
+        <div class="service-card">
+            <div class="service-icon">📊</div>
+            <h3>Financial Planning</h3>
+            <p>Budget optimization, subsidy guidance, and loan facilitation services.</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <li><a href="index.html">Home</a></li>
+</footer>
+<style>
+    /* Services Section Styles */
+    .services-section {
+        max-width: 85%;
+        margin: 40px auto;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .services-intro {
+        font-size: 18px;
+        margin-bottom: 30px;
+        color: #55e493;
+    }
+    
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+    }
+    
+    .service-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 25px;
+        transition: all 0.3s ease;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    
+    .service-card h3 {
+        color: #ffcc00;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    
+    .service-card p {
+        line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+        
+        .services-section {
+            padding: 20px;
+        }
+    }
