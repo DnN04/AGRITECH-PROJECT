@@ -20,4 +20,4 @@ Database: Firebase / MongoDB
 
 AI & Data Processing: Python, Flask, Weather & AgriMarket APIs
 
-Hosting: Vercel (Frontend), Render (Backend
+Hosting: Vercel (Frontend), Render (Backend)
